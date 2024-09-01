@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 workshop</title>
+
+    <style>
+      main {
+        margin: 120px 0;
+      }
+      h1,
+      h2 {
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+
+      h1 {
+        color: #272044;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #885df1;
+        padding: 0 0 24px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        text-align: center;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #885df1;
+        color: #885df1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>👩‍💻 She Codes is a Coding Workshop for Women</h1>
+        <h2>Access a new career in Technology</h2>
+      </div>
+      <div>
+        <p>
+          She Codes teaches coding, design and management skills to women<br />
+          <strong>Limited amount of spots!</strong>
+        </p>
+      </div>
+      <button>Apply Now</button>
+    </main>
+    <script>
+      //   let city = prompt("What is your Hometown?");
+      //   alert(`You are from ${city}`);
+      //   let fname = prompt("What is your first Name?");
+      //   let lname = prompt("What is your first Name?");
+      //   const fulName = `${fname} ${lname}`;
+      //   alert(fulName);
+      //   let age = prompt("How old are you?");
+
+      //   if (age >= 18) {
+      //     alert("You can now apply to She Codes");
+      //   } else {
+      //     alert("You are too young to apply to She Codes!");
+      //   }
+
+      //   let greetings = prompt("What is your current hour?");
+
+      //   if (greetings < 12) {
+      //     alert("Good Morning✨✨");
+      //   } else if (greetings < 18) {
+      //     alert("Good Afternoon🔆");
+      //   } else if (greetings <= 23) {
+      //     alert("Good Evening💫💫");
+      //   } else {
+      //     alert("Good Nigh💤💤");
+      //   }
+
+      //   let city = prompt("What Country are you from?");
+
+      //   if (
+      //     city.toUpperCase() === "PORTUGAL" ||
+      //     city.toUpperCase() === "BRAZIL"
+      //   ) {
+      //     alert("You can speak Portuguese");
+      //   } else {
+      //     alert("You cannot speak Portuguese, Go learn Portuguese");
+      //   }
+
+      let city = prompt("What Country are you from?");
+
+      if (isCloseMatch(city, "PORTUGAL") || isCloseMatch(city, "BRAZIL")) {
+        alert("You can speak Portuguese");
+      } else {
+        alert("You cannot speak Portuguese, Go learn Portuguese");
+      }
+    </script>
+  </body>
+</html>

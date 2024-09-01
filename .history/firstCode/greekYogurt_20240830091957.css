@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  text-align: center;
+}
+h1 {
+  color: #6029e7;
+}
+h2 {
+  border: 0.1em solid #6029e7;
+  border-radius: 5%;
+  padding: 1em;
+  margin: 1em;
+}

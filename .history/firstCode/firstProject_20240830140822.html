@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", system-ui;
+        background-color: #f7f6f8;
+      }
+      main {
+        background: linear-gradient(to right, #020008, #000000 30%);
+        color: #fff;
+        padding: 2em;
+        max-width: 70%;
+        margin: 5em auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+        border-bottom: 0.3em solid #260255;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+      nav a:hover {
+        color: #2a06a1;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+        margin: 0 2em;
+        box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="left">
+          <p>Hello!</p>
+          <h1>I'm Victoria Akpan</h1>
+          <p>Frontend Developer || IT Specialist</p>
+          <button>Heir Me</button>
+          <button>My Website</button>
+        </div>
+        <div class="right">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/482/original/mine11-removebg-preview.png?1725020551"
+            alt="Profile-Pic"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

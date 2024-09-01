@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  text-align: center;
+}
+h1 {
+  color: #6029e7;
+}
+h2 {
+  border: 0.1em solid #6029e7;
+  border-radius: 8px;
+  padding: 1em;
+  width: 50%;
+  margin: 1em auto;
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-size: 0.95em;
+  max-width: 70%;
+  margin: 1em auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #6029e7;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-in-out;
+}
+button:hover {
+  background-color: #fff;
+  color: #6029e7;
+  border: 1px solid #6029e7;
+  cursor: pointer;
+}
+.Learn-more {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  margin-top: 0.75em;
+}
+.Learn-more:hover {
+  text-decoration: underline;
+}

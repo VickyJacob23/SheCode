@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo WeatherAPP</title>
+
+    <style>
+      body {
+        background-color: #f8f8f8;
+      }
+      h1 {
+        color: #1a64d6;
+        font-size: 48px;
+        font-weight: 700;
+      }
+      
+      .days:hover{
+        background-color: #f8dfdf;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 10px;
+        display: inline-flex;
+      }
+      span{
+        font-weight: 700;
+      }
+      button {
+        background-color: #1a64d6;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        display: block;
+        padding: 1.5em;
+        border-radius: 30px;
+        transition: all 500ms ease-in-out;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        cursor: pointer;
+      }
+      .container {
+        margin: auto;
+        text-align: center;
+        line-height:1;
+        }
+      .days {
+        margin-bottom: 30px;
+      }
+      
+      .gray{
+        font-size: 15px;
+        color:#555353
+      }
+
+      #bold {
+        font-size: 35px;
+      }
+      #author {
+        font-size: 19px;
+        color: #464444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><div>☁ </div> Currently 21° in Tokyo</h1>
+      <p id="bold">13° / <span>23°</span></p>
+
+      <div class="days">
+        <h2>🌧Tomorrow</h2>
+        <p class="gray">10° / <span>22°</span></p>
+      </div>
+
+      <div class="days">
+        <h2>🌧Saturday</h2>
+        <p class="gray">15° / <span>17°</span></p>
+      </div>
+
+      <div class="days">
+        <h2> ☀️Sunday</h2>
+        <p class="gray">25° / <span>28°</span></p>
+      </div>
+
+       <button class="btn">Change City</button>
+
+      <p id="author">Code by Victoria Akpan</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

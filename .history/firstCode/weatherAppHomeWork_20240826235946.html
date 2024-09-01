@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo WeatherAPP</title>
+
+    <style>
+        body{
+            background-color: #f3ebe0;
+        }
+        .title h1,.icon{
+            color: #1a64d6;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .container{
+            margin: auto;
+            text-align: center;
+        }
+        .icon div{
+            color: #1a64d6;
+        }
+        .subtitle{
+            color: #000103;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p + p{
+            font-size: 30px;
+            opacity: 0.7;
+            color: #8f8c8c;
+        }
+        span{
+            font-weight: 700;
+        }
+        sup{
+            font-size: 10px;
+        }
+        button{
+            background-color: #1a64d6;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 1.5em;
+            border-radius: 30px;
+            transition: all 500ms ease-in-out;
+        }
+        button:hover{
+            background-color: #fff;
+            color: #1a64d6;
+            border:1px solid #1a64d6;
+            cursor:pointer
+        }
+        #bold{
+            font-size: 3em;
+        }
+        #author{
+            font-size: 14px;
+            color: #8f8c8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <section class="title">
+            <div class="icon">☁</div>
+            <h1>Currently 21<sup>0</sup> in Tokyo</h1>
+            <p id="bold">13<sup>0</sup><span>23<sup>0</sup></span></p>
+        </section>
+
+        <section>
+            <div class="subtitle">🌧Tomorrow</div>
+            <p >10<sup>0</sup><span>22 <sup>0</sup></span></p>
+        </section>
+
+        <section>
+            <div class="subtitle">🌨Saturday</div>
+            <p>15<sup>0</sup><span>17 <sup>0</sup></span></p>
+        </section>
+
+        <section>
+            <div class="subtitle">☀️Sunday</div>
+            <p>25<sup>0</sup><span>28 <sup>0</sup></span></p>
+        </section>
+
+        <button>Change City</button>
+
+        <p id="author">Code by Victoria Akpan </p>
+    </div>
+</body>
+</html>

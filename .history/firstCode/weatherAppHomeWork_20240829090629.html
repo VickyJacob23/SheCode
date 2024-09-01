@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo WeatherAPP</title>
+
+    <style>
+      body {
+        background-color: #f8f8f8;
+      }
+      h1 {
+        color: #1a64d6;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      span {
+        font-weight: 700;
+      }
+      button {
+        background-color: #1a64d6;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        display: block;
+        margin: 10px auto;
+        padding: 1.5em;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 500ms ease-in-out;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        cursor: pointer;
+      }
+      .container {
+        margin: auto;
+        text-align: center;
+        line-height: 1;
+      }
+
+      .gray {
+        font-size: 15px;
+        color: #555353;
+      }
+      .days {
+        margin-bottom: 30px;
+      }
+      .days:hover {
+        background-color: #ffe2e2;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+        border-radius: 10px;
+        display: inline-flex;
+        padding: 10px 25px;
+      }
+
+      #bold {
+        font-size: 35px;
+      }
+      #author {
+        font-size: 19px;
+        color: #464444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <div>☁</div>
+        Currently 21° in Tokyo
+      </h1>
+      <p id="bold">13° / <span>23°</span></p>
+
+      <div class="days">
+        <h2>🌧Tomorrow</h2>
+        <p class="gray">10° / <span>22°</span></p>
+      </div>
+
+      <div class="days">
+        <h2>🌥Saturday</h2>
+        <p class="gray">15° / <span>17°</span></p>
+      </div>
+
+      <div class="days">
+        <h2>☀️Sunday</h2>
+        <p class="gray">25° / <span>28°</span></p>
+      </div>
+
+      <button class="btn">Change City</button>
+
+      <p id="author">Code by Victoria Akpan</p>
+    </div>
+    <script>
+      let city = prompt("What City do you live in?");
+      let tempt = prompt("What is the temperature in " + city + "?");
+      console.log(tempt);
+
+      function applyState() {
+        if (tempt.length > 0) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = `Currently ${city}!,  Welcome to SheCodes !`;
+        }
+      }
+    </script>
+  </body>
+</html>

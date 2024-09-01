@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", system-ui;
+        background-color: #f7f6f8;
+      }
+      main {
+        background: linear-gradient(to right, #020008, #000000 30%);
+        color: #fff;
+        padding: 2em;
+        max-width: 70%;
+        margin: 5em auto;
+        box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
+        border-radius: 1em;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+        border-bottom: 0.3em solid #260255;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1em;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+      nav a:hover {
+        color: #2a06a1;
+      }
+      span {
+        color: #2a06a1;
+      }
+      button {
+        background-color: #2a06a1;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 0.5em;
+        transition: all 500ms ease-in-out;
+        box-shadow: 1em 1em 1em rgba(63, 2, 104, 0.1);
+      }
+
+      button:hover {
+        background-color: #fdfdff;
+        color: #2a06a1;
+        cursor: pointer;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5em;
+        margin: 0;
+        padding: 2em;
+      }
+      .left h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        line-height: 0.95em;
+      }
+      
+    </style>
+</head>
+<body>
+    <main>
+      <header>
+        <h1>Pets Home</h1>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Pets</a></li>
+            <li><a href="#">Help the Shelter</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="left">
+          <h1>
+            Not Only <span>People <br />Need a Home</span>
+          </h1>
+          <p>Maltese dog refers both to an ancient variety of dwarf, white-coated dog breed from Italy and generally associated also with the island of Malta, and to a modern breed of similar dogs in the toy group, genetically related to the Bichon, Bolognese, and Havanese breeds</p>
+          <p class="learn"><a href="https://en.wikipedia.org/wiki/Maltese_dog">Learn More on Wikipedia</a></p>
+          <button>Make a Friend</button>
+        </div>
+        <div class="right">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/597/original/865688e8dc9c1577f9e58b2dfec237dd.jpg?1725145558"
+            width="400px"
+            height="400px"
+            alt="pet"
+          />
+        </div>
+      </div>
+    </main>
+</body>
+</html>
